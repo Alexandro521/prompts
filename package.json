@@ -1,11 +1,11 @@
 {
-  "name": "@withgraphite/prompts",
-  "version": "0.0.6",
+  "name": "@alexandro521/prompts",
+  "version": "0.0.1",
   "description": "Lightweight, beautiful and user-friendly prompts",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/withgraphite/prompts.git"
+    "url": "git+https://github.com/Alexandro521/prompts.git"
   },
   "main": "index.js",
   "author": {
