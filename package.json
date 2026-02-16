@@ -1,6 +1,7 @@
 {
   "name": "@alexandro521/prompts",
   "version": "0.0.1",
+  "packageManager": "pnpm@9.0.0",
   "description": "Lightweight, beautiful and user-friendly prompts",
   "license": "MIT",
   "repository": {
