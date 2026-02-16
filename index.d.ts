@@ -100,6 +100,7 @@ declare namespace prompts {
 		mask?: string | PrevCaller<T, string | Falsy> | undefined;
 		stdout?: Writable | undefined;
 		stdin?: Readable | undefined;
+		clearFirst?: boolean | PrevCaller<T, boolean | Falsy> | undefined;
 	}
 
 	type Answers<T extends string> = { [id in T]: any };
