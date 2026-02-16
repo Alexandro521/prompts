@@ -1,5 +1,5 @@
 {
-  "name": "@alexandro521/prompts",
+  "name": "@alex_521/prompts",
   "version": "0.0.3",
   "packageManager": "pnpm@9.0.0",
   "description": "Lightweight, beautiful and user-friendly prompts",
