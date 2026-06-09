@@ -16,7 +16,7 @@ importers:
         version: 1.0.5
     devDependencies:
       '@types/node':
-        specifier: ^18.11.17
+        specifier: ^18.19.130
         version: 18.19.130
       tape:
         specifier: ^4.13.3
