@@ -13,6 +13,7 @@ export = prompts;
 
 import { Readable, Writable } from 'stream';
 import { Kleur } from 'kleur';
+import type { Key } from 'readline';
 
 declare function prompts<T extends string = string>(
 	questions: prompts.PromptObject<T> | Array<prompts.PromptObject<T>>,
@@ -101,6 +102,7 @@ declare namespace prompts {
 		stdout?: Writable | undefined;
 		stdin?: Readable | undefined;
 		clearFirst?: boolean | PrevCaller<T, boolean | Falsy> | undefined;
+		customKeyHandler?: ((key:Key, keyname: string) => void) | undefined
 	}
 
 	type Answers<T extends string> = { [id in T]: any };
