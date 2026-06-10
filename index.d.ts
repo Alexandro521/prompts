@@ -102,7 +102,7 @@ declare namespace prompts {
 		stdout?: Writable | undefined;
 		stdin?: Readable | undefined;
 		clearFirst?: boolean | PrevCaller<T, boolean | Falsy> | undefined;
-		customKeyHandler?: ((key:Key, keyname: string) => void) | undefined
+		customKeyHandler?: ((this: this, key:Key, keyname: string) => void) | undefined
 	}
 
 	type Answers<T extends string> = { [id in T]: any };
