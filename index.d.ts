@@ -83,6 +83,8 @@ declare namespace prompts {
 		format?: PrevCaller<T, void> | undefined;
 		validate?: PrevCaller<T, boolean | string | Promise<boolean | string>> | undefined;
 		onState?: PrevCaller<T, void> | undefined;
+		onClose?: PrevCaller<T, void> | undefined;
+		onKeyPress?: ((this: any, key:Key, keyname: string) => void) | undefined
 		onRender?: ((kleur: Kleur) => void) | undefined;
 		min?: number | PrevCaller<T, number | Falsy> | undefined;
 		max?: number | PrevCaller<T, number | Falsy> | undefined;
@@ -102,7 +104,6 @@ declare namespace prompts {
 		stdout?: Writable | undefined;
 		stdin?: Readable | undefined;
 		clearFirst?: boolean | PrevCaller<T, boolean | Falsy> | undefined;
-		customKeyHandler?: ((this: this, key:Key, keyname: string) => void) | undefined
 	}
 
 	type Answers<T extends string> = { [id in T]: any };
